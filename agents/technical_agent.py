@@ -6,7 +6,7 @@ from phi.tools.yfinance import YFinanceTools
 def technical_analyzer_agent():
     return Agent(
         name="Technical Analyzer Agent",
-        model=OpenAIChat(id="gpt-4o"),
+        model=OpenAIChat(id="gpt-4o-mini-2024-07-18"),
         description=("You are a technical analysis agent that helps users analyze stock prices and trends."),
         tools=[YFinanceTools(stock_price=True, technical_indicators=True, historical_prices=True)],
         instructions=["Perform technical analysis on the stock. Include:\n"

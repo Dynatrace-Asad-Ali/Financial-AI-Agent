@@ -1,2 +1,5 @@
 __pycache__
 agents/__pycache__
+.idea*
+*.orig
+financial-agent/*

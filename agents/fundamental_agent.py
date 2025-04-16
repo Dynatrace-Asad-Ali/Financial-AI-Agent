@@ -5,7 +5,7 @@ from phi.tools.yfinance import YFinanceTools
 def fundamental_analyzer_agent():
     return Agent(
     name="Fundamental Analyzer Agent",
-    model=Groq(id="llama3-groq-70b-8192-tool-use-preview"),
+    model=Groq(id="llama-3.3-70b-versatile"),
     description="You are a fundamental analysis agent that helps users analyze the financial health of companies.",
     tools=[YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True, company_news=True)],
     instructions=["Conduct fundamental analysis of the stock. Include:\n"

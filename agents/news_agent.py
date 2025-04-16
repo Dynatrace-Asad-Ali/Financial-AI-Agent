@@ -6,7 +6,7 @@ def news_search_agent():
     """Google News Search Agent."""
     return Agent(
         name="News Search Agent",
-        model=Groq(id="llama3-groq-70b-8192-tool-use-preview"),
+        model=Groq(id="llama-3.3-70b-versatile"),
         tools=[GoogleSearch()],
         description="You are a news agent that helps users find the latest news.",
         instructions=[
