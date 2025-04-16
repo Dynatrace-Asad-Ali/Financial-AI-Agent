@@ -1,0 +1,1 @@
+sed -i "s,GROQ_API_KEY_TOREPLACE,$DT_URL," /workspaces/$RepositoryName/dynatrace/dynakube.yaml
